@@ -10,15 +10,21 @@ A multimedia company providing web design, graphic design, and social media mark
 - Inability to access network resources
 
 ## Repository Structure
-NIST-CSF-Incident-Report/
-├── README.md                   # Overview of the project
-├── Incident_Report_Template.docx  # Editable incident report template
-├── Final_Report.pdf            # Completed incident report
-├── resources/                  # Supporting materials
-│   ├── Applying_the_NIST_CSF.pdf
-└── images/                     # Visuals for the project
-    ├── network_diagram.png
-    └── attack_flowchart.png
+network-incident-analysis/
+│
+├── incident-report/
+│   ├── summary.md
+│   ├── identify.md
+│   ├── protect.md
+│   ├── detect.md
+│   ├── respond.md
+│   └── recover.md
+│
+├── diagrams/
+│   ├── network-topology.md
+│   └── incident-timeline.md
+│
+└── README.md
 
 ## Key Insights
 1. Importance of proactive network security.
