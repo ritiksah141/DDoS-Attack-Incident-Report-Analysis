@@ -1,28 +1,169 @@
+# DDoS Attack Incident Report Analysis  
+**Using NIST Cybersecurity Framework (CSF)**  
 
-# Incident Report Analysis
-
-## Incident Report Overview
-
-| Section      | Details                                                                                                                                                                |
-|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Summary**  | The company experienced a security event when all network services suddenly stopped responding. The cybersecurity team found the disruption was caused by a distributed denial of service (DDoS) attack through a flood of incoming ICMP packets. The team responded by blocking the attack and stopping all non-critical network services, so that critical network services could be restored. |
-| **Identify** | - A malicious actor or actors targeted the company with an ICMP flood attack.  <br> - The entire internal network was affected.  <br> - All critical network resources needed to be secured and restored to a functioning state. |
-| **Protect**  | - The cybersecurity team implemented a new firewall rule to limit the rate of incoming ICMP packets.  <br> - An IDS/IPS system was implemented to filter out some ICMP traffic based on suspicious characteristics. |
-| **Detect**   | - Source IP address verification was configured on the firewall to check for spoofed IP addresses on incoming ICMP packets.  <br> - Network monitoring software was implemented to detect abnormal traffic patterns. |
-| **Respond**  | - For future security events, the cybersecurity team will:  <br> - Isolate affected systems to prevent further disruption to the network.  <br> - Restore any critical systems and services disrupted by the event.  <br> - Analyze network logs for suspicious and abnormal activity.  <br> - Report all incidents to upper management and appropriate legal authorities, if applicable. |
-| **Recover**  | - To recover from a DDoS attack by ICMP flooding:  <br> - Restore access to network services to a normal functioning state.  <br> - Block external ICMP flood attacks at the firewall.  <br> - Stop all non-critical network services to reduce internal network traffic.  <br> - Restore critical network services first.  <br> - Once the flood of ICMP packets has timed out, bring all non-critical network systems and services back online. |
+## Executive Summary  
+Multimedia company experienced a Distributed Denial of Service (DDoS) attack that compromised the internal network for approximately two hours. The attack consisted of a flood of ICMP packets through an unconfigured firewall, resulting in a complete disruption of network services. This report analyzes the incident using the NIST CSF framework and provides comprehensive recommendations for future security improvements.  
 
 ---
 
-## Reflections/Notes
+## 1. IDENTIFY  
 
-- **Lessons Learned**: This incident reinforced the importance of proactive network monitoring and robust firewall configurations to mitigate DDoS attacks.  
-- **Improvements for Future**: Implementing additional training for staff on identifying potential threats and refining incident response protocols.  
-- **Tools and Frameworks**: Using the NIST Cybersecurity Framework to systematically address vulnerabilities proved invaluable in streamlining the response and recovery process.  
-- **Actionable Steps**: 
-  - Conduct regular audits of network configurations to identify misconfigurations.  
-  - Upgrade firewall systems to include advanced DDoS protection.  
-  - Review and update the organization's incident response plan every six months.  
+### Incident Overview  
+- **Attack Type:** Distributed Denial of Service (DDoS) - ICMP Flood  
+- **Duration:** 2 hours  
+- **Systems Impacted:**  
+  - Internal network infrastructure  
+  - Network resources access  
+  - Business-critical services  
+
+### Root Cause Analysis  
+- **Primary vulnerability:** Unconfigured firewall allowing unrestricted ICMP packets  
+- **Attack vector:** Flood of ICMP pings  
+- **Impact severity:** High (complete service disruption)  
 
 ---
 
+## 2. PROTECT  
+
+### Immediate Actions Implemented  
+#### New Firewall Rules  
+- Implementation of ICMP packet rate limiting  
+- Source IP address verification  
+- Spoofed IP address detection  
+
+#### Network Architecture Improvements  
+- Deployment of IDS/IPS system  
+- Implementation of network monitoring software  
+- Enhanced traffic pattern analysis  
+
+### Future Protection Strategy  
+#### Technical Controls  
+- Regular firewall configuration audits  
+- Network segmentation implementation  
+- DDoS mitigation service deployment  
+- Redundant network paths  
+
+#### Administrative Controls  
+- Security policy updates  
+- Regular security training programs  
+- Incident response procedure documentation  
+- Change management processes  
+
+---
+
+## 3. DETECT  
+
+### Enhanced Detection Capabilities  
+#### Network Monitoring  
+- Real-time traffic analysis  
+- Baseline traffic pattern establishment  
+- Anomaly detection systems  
+- Regular network scanning  
+
+#### Alert Systems  
+- ICMP flood detection thresholds  
+- Automated alert mechanisms  
+- 24/7 monitoring procedures  
+- Log analysis and correlation  
+
+### Detection Metrics  
+- Response time targets  
+- False positive reduction strategies  
+- Alert priority classification  
+- Escalation procedures  
+
+---
+
+## 4. RESPOND  
+
+### Incident Response Plan  
+#### Immediate Response  
+- Block incoming ICMP packets  
+- Take non-critical services offline  
+- Restore critical services  
+- Engage incident response team  
+
+#### Investigation Process  
+- Traffic analysis  
+- Log review  
+- Impact assessment  
+- Root cause determination  
+
+#### Communication Strategy  
+- Internal stakeholder notification  
+- External communication management  
+- Client impact assessment  
+- Status update procedures  
+
+---
+
+## 5. RECOVER  
+
+### Recovery Procedures  
+#### Service Restoration  
+- Systematic service restart  
+- Functionality verification  
+- Performance monitoring  
+- User access restoration  
+
+#### System Hardening  
+- Firewall reconfiguration  
+- Security patch implementation  
+- Network optimization  
+- Documentation updates  
+
+### Long-term Recovery Strategy  
+#### Infrastructure Improvements  
+- Network architecture review  
+- Security control enhancement  
+- Monitoring system upgrades  
+- Backup system verification  
+
+#### Process Improvements  
+- Incident response plan updates  
+- Staff training enhancement  
+- Documentation refinement  
+- Communication protocol optimization  
+
+---
+
+## Lessons Learned  
+
+### Technical Findings  
+- Importance of proper firewall configuration  
+- Need for continuous monitoring  
+- Value of IDS/IPS systems  
+- Significance of traffic pattern analysis  
+
+### Process Findings  
+- Response time optimization opportunities  
+- Communication efficiency improvements  
+- Training requirement identification  
+- Documentation importance  
+
+---
+
+## Recommendations  
+
+### Immediate Actions (0-30 days)  
+- Complete firewall audit and reconfiguration  
+- Implement comprehensive monitoring  
+- Deploy automated alert systems  
+- Update incident response procedures  
+
+### Short-term Actions (30-90 days)  
+- Conduct staff security training  
+- Implement network segmentation  
+- Deploy additional security tools  
+- Enhance documentation  
+
+### Long-term Actions (90+ days)  
+- Regular security assessments  
+- Continuous improvement program  
+- Periodic system audits  
+- Ongoing staff development  
+
+---
+
+## Conclusion  
+This incident highlighted the critical importance of proper network security configurations and monitoring systems. The implemented improvements and recommended actions will significantly enhance our security posture and ability to prevent, detect, and respond to similar incidents in the future.  
