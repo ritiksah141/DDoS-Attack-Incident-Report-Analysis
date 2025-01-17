@@ -15,8 +15,8 @@ NIST-CSF-Incident-Report/
 │   ├── Applying_the_NIST_CSF.pdf
 │   ├── Example_Incident_Report_Analysis.pdf
 └── images/                     # Visuals for the project
-├── network_diagram.png
-└── attack_flowchart.png
+    ├── network_diagram.png
+    └── attack_flowchart.png
 
 ## Key Insights
 1. Importance of proactive network security.
