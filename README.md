@@ -23,7 +23,7 @@ NIST-CSF-Incident-Report/
 3. Recommended strategies for improved detection and recovery.
 
 ## How to Use
-- View the final report (``) for insights.
+- View the final report (`https://github.com/ritiksah141/NIST-CSF-Incident-Report/blob/main/Final_Report.pdf`) for insights.
 - Use the editable template (`Incident_Report_Template.docx`) to create your own reports.
 - Refer to visuals in the `images/` folder for a better understanding of the scenario.
 
