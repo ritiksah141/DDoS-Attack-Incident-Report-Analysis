@@ -1,34 +1,187 @@
-# NIST Cybersecurity Framework Incident Report: DDoS Attack Response
+# NIST Cybersecurity Framework: DDoS Attack Analysis
+[![Security](https://img.shields.io/badge/Security-Incident_Analysis-blue)](https://github.com/yourusername/NIST-CSF-Incident-Report)
+[![NIST](https://img.shields.io/badge/Framework-NIST_CSF-green)](https://github.com/yourusername/NIST-CSF-Incident-Report)
+[![Status](https://img.shields.io/badge/Status-Completed-success)](https://github.com/yourusername/NIST-CSF-Incident-Report)
 
-## Project Description
-This portfolio project demonstrates the analysis of a DDoS attack incident using the NIST Cybersecurity Framework (CSF). The analysis includes a detailed incident report and strategic recommendations for improving network security.
+## 📋 Project Overview
 
-## Scenario Overview
-A multimedia company providing web design, graphic design, and social media marketing services experienced a DDoS attack that compromised their internal network for two hours. The attack consisted of:
-- Flood of ICMP packets through an unconfigured firewall
-- Disruption of normal internal network traffic
-- Inability to access network resources
+This repository contains a comprehensive analysis of a DDoS attack incident using the NIST Cybersecurity Framework (CSF). The project demonstrates practical incident response and security analysis in a real-world scenario.
 
-## Repository Structure
+### 🎯 Objectives
+- Document and analyze a DDoS attack using NIST CSF
+- Provide actionable security recommendations
+- Demonstrate incident response procedures
+- Create reusable security templates
+
+## 🔍 Incident Summary
+
+**Type:** Distributed Denial of Service (DDoS) Attack  
+**Duration:** 2 Hours  
+**Impact:** Internal Network Compromise  
+**Vector:** ICMP Flood  
+
+### Attack Details
+- ICMP packet flood through unconfigured firewall
+- Complete disruption of normal network traffic
+- Network resource access blocked
+- Business services affected
+
+## 📁 Repository Structure
+
+```
 NIST-CSF-Incident-Report/
-├── README.md                   # Overview of the project
-├── Incident_Report_Template.docx  # Editable incident report template
-├── Final_Report.pdf            # Completed incident report
-├── resources/                  # Supporting materials
-│   ├── Applying_the_NIST_CSF.pdf
-└── images/                     # Visuals for the project
-├── network_diagram.png
-└── attack_flowchart.png
+├── docs/
+│   ├── incident-report/
+│   │   ├── executive-summary.md
+│   │   ├── technical-analysis.md
+│   │   └── recommendations.md
+│   └── templates/
+│       └── incident-response-template.md
+├── diagrams/
+│   ├── network-topology.md
+│   ├── attack-flowchart.md
+│   └── timeline.md
+├── procedures/
+│   ├── response-protocol.md
+│   └── remediation-checklist.md
+└── README.md
+```
 
-## Key Insights
-1. Importance of proactive network security.
-2. Application of the NIST CSF to real-world scenarios.
-3. Recommended strategies for improved detection and recovery.
+## 🛠️ Implementation Details
 
-## How to Use
-- View the final report (`https://github.com/ritiksah141/NIST-CSF-Incident-Report/blob/main/Final_Report.pdf`) for insights.
-- Use the editable template (`Incident_Report_Template.docx`) to create your own reports.
-- Refer to visuals in the `images/` folder for a better understanding of the scenario.
+### Security Controls
+```plaintext
+1. Firewall Configuration
+   - ICMP packet rate limiting
+   - Source IP verification
+   - Traffic filtering rules
 
-## Credits
-This project is based on a DDoS attack scenario from a cybersecurity learning course.
+2. Monitoring Systems
+   - Network traffic analysis
+   - Anomaly detection
+   - Alert configuration
+
+3. Response Procedures
+   - Incident documentation
+   - Team coordination
+   - Recovery protocols
+```
+
+## 📊 Analysis Components
+
+### 1. NIST CSF Implementation
+- **Identify**: Asset management and risk assessment
+- **Protect**: Access control and security measures
+- **Detect**: Monitoring and detection processes
+- **Respond**: Response planning and communications
+- **Recover**: Recovery planning and improvements
+
+### 2. Technical Documentation
+- Network architecture analysis
+- Attack vector assessment
+- Security control implementation
+- Recovery procedures
+
+## 🚀 Getting Started
+
+### Prerequisites
+```plaintext
+- Understanding of network security concepts
+- Familiarity with NIST CSF
+- Knowledge of incident response procedures
+```
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/yourusername/NIST-CSF-Incident-Report.git
+cd NIST-CSF-Incident-Report
+```
+
+2. Review documentation
+```bash
+cd docs/incident-report
+```
+
+## 📖 Usage Guide
+
+### Security Analysts
+```markdown
+1. Review incident analysis
+   - Technical details
+   - Attack patterns
+   - Response strategies
+
+2. Use templates
+   - Incident response
+   - Documentation
+   - Analysis frameworks
+```
+
+### System Administrators
+```markdown
+1. Implement controls
+   - Follow configuration guides
+   - Set up monitoring
+   - Configure alerts
+
+2. Use checklists
+   - Security controls
+   - System hardening
+   - Recovery procedures
+```
+
+## 🔑 Key Findings
+
+### Critical Insights
+1. Firewall Configuration
+   - Proper setup requirements
+   - Regular audit needs
+   - Configuration management
+
+2. Detection Systems
+   - Real-time monitoring
+   - Alert configuration
+   - Response optimization
+
+3. Response Protocol
+   - Team coordination
+   - Communication flows
+   - Resource allocation
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create feature branch
+```bash
+git checkout -b feature/YourFeature
+```
+3. Commit changes
+```bash
+git commit -m 'Add YourFeature'
+```
+4. Push to branch
+```bash
+git push origin feature/YourFeature
+```
+5. Create Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📬 Contact
+
+- **Project Link:** [https://github.com/yourusername/NIST-CSF-Incident-Report](https://github.com/yourusername/NIST-CSF-Incident-Report)
+- **Portfolio:** [Your Portfolio URL]
+- **LinkedIn:** [Your LinkedIn Profile]
+
+## 🙏 Acknowledgments
+
+- NIST Cybersecurity Framework
+- Cybersecurity community
+- Open source security tools
+
+---
+*This project is part of a cybersecurity portfolio demonstrating incident response and analysis capabilities.*
