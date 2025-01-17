@@ -13,11 +13,9 @@ NIST-CSF-Incident-Report/
 ├── Final_Report.pdf            # Completed incident report
 ├── resources/                  # Supporting materials
 │   ├── Applying_the_NIST_CSF.pdf
-│   ├── Example_Incident_Report_Analysis.pdf
 └── images/                     # Visuals for the project
     ├── network_diagram.png
     └── attack_flowchart.png
-''' markdown
 
 ## Key Insights
 1. Importance of proactive network security.
@@ -25,7 +23,7 @@ NIST-CSF-Incident-Report/
 3. Recommended strategies for improved detection and recovery.
 
 ## How to Use
-- View the final report (`Final_Report.pdf`) for insights.
+- View the final report (``) for insights.
 - Use the editable template (`Incident_Report_Template.docx`) to create your own reports.
 - Refer to visuals in the `images/` folder for a better understanding of the scenario.
 
