@@ -25,4 +25,3 @@
 
 ---
 
-This markdown will display the report as a clean table and include a structured reflection section. Let me know if you'd like further customization!
