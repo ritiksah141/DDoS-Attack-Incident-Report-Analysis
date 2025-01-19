@@ -96,10 +96,5 @@ NIST-CSF-DDoS-Analysis/
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Contact
-
-Your Name - [your.email@example.com]
-Project Link: [https://github.com/yourusername/NIST-CSF-DDoS-Analysis](https://github.com/yourusername/NIST-CSF-DDoS-Analysis)
-
 ---
 *This project is part of a cybersecurity portfolio demonstrating incident response and analysis capabilities using the NIST Cybersecurity Framework.*
