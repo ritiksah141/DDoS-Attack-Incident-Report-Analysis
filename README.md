@@ -1,187 +1,105 @@
 # NIST Cybersecurity Framework: DDoS Attack Analysis
-[![Security](https://img.shields.io/badge/Security-Incident_Analysis-blue)](https://github.com/yourusername/NIST-CSF-Incident-Report)
-[![NIST](https://img.shields.io/badge/Framework-NIST_CSF-green)](https://github.com/yourusername/NIST-CSF-Incident-Report)
-[![Status](https://img.shields.io/badge/Status-Completed-success)](https://github.com/yourusername/NIST-CSF-Incident-Report)
+[![Security](https://img.shields.io/badge/Security-Incident_Analysis-blue)](https://github.com/yourusername/NIST-CSF-DDoS-Analysis)
+[![NIST](https://img.shields.io/badge/Framework-NIST_CSF-green)](https://github.com/yourusername/NIST-CSF-DDoS-Analysis)
+[![Status](https://img.shields.io/badge/Status-Completed-success)](https://github.com/yourusername/NIST-CSF-DDoS-Analysis)
 
-## 📋 Project Overview
+## Project Overview
 
-This repository contains a comprehensive analysis of a DDoS attack incident using the NIST Cybersecurity Framework (CSF). The project demonstrates practical incident response and security analysis in a real-world scenario.
+This repository contains a comprehensive analysis of a DDoS attack incident that occurred at a multimedia company offering web design services, graphic design, and social media marketing solutions. The analysis follows the NIST Cybersecurity Framework (CSF) to document the incident response and provide recommendations for future security improvements.
 
-### 🎯 Objectives
-- Document and analyze a DDoS attack using NIST CSF
-- Provide actionable security recommendations
-- Demonstrate incident response procedures
-- Create reusable security templates
-
-## 🔍 Incident Summary
+## Incident Summary
 
 **Type:** Distributed Denial of Service (DDoS) Attack  
 **Duration:** 2 Hours  
-**Impact:** Internal Network Compromise  
-**Vector:** ICMP Flood  
+**Impact:** Internal Network Services Disruption  
+**Attack Vector:** ICMP Flood  
 
 ### Attack Details
-- ICMP packet flood through unconfigured firewall
-- Complete disruption of normal network traffic
-- Network resource access blocked
+- Flood of ICMP packets through unconfigured firewall
+- Network services disruption
+- Internal network access compromised
 - Business services affected
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
-NIST-CSF-Incident-Report/
-├── docs/
-│   ├── incident-report/
-│   │   ├── executive-summary.md
-│   │   ├── technical-analysis.md
-│   │   └── recommendations.md
-│   └── templates/
-│       └── incident-response-template.md
-├── diagrams/
-│   ├── network-topology.md
-│   ├── attack-flowchart.md
-│   └── timeline.md
-├── procedures/
-│   ├── response-protocol.md
-│   └── remediation-checklist.md
+NIST-CSF-DDoS-Analysis/
+├── Diagrams/
+│   ├── DDoS_Attack_and_Response_Flowchart.jpg
+│   ├── Incident_Timeline.jpg
+│   └── Network_Topology_and_Attack_Flow.jpg
+├── Incident-Report/
+│   ├── Complete_Incident_Report.pdf
+│   ├── Incident_Report_Analysis.md
+│   └── Incident_Report_Template.docx
+├── Resources/
+│   ├── Applying_the_NIST_CSF.pdf
+│   └── Example_of_an_Incident_report_analysis.pdf
+├── LICENSE
 └── README.md
 ```
 
-## 🛠️ Implementation Details
+## NIST CSF Implementation
 
-### Security Controls
-```plaintext
-1. Firewall Configuration
+### 1. Identify
+- Asset inventory and management
+- Risk assessment
+- Network vulnerability analysis
+
+### 2. Protect
+- Firewall configuration improvements
+- ICMP packet rate limiting
+- Source IP verification
+
+### 3. Detect
+- Network monitoring implementation
+- Traffic pattern analysis
+- IDS/IPS system deployment
+
+### 4. Respond
+- Incident containment procedures
+- Service restoration priorities
+- Team communication protocols
+
+### 5. Recover
+- System recovery procedures
+- Service restoration
+- Security posture improvements
+
+## Security Controls Implemented
+
+1. Network Protection
    - ICMP packet rate limiting
    - Source IP verification
-   - Traffic filtering rules
+   - Enhanced firewall rules
 
-2. Monitoring Systems
+2. Monitoring Solutions
    - Network traffic analysis
    - Anomaly detection
-   - Alert configuration
+   - Alert system configuration
 
-3. Response Procedures
-   - Incident documentation
-   - Team coordination
-   - Recovery protocols
-```
+## Getting Started
 
-## 📊 Analysis Components
+1. Review the complete incident report in the `Incident-Report` folder
+2. Examine the network diagrams in the `Diagrams` folder
+3. Reference the NIST CSF materials in the `Resources` folder
 
-### 1. NIST CSF Implementation
-- **Identify**: Asset management and risk assessment
-- **Protect**: Access control and security measures
-- **Detect**: Monitoring and detection processes
-- **Respond**: Response planning and communications
-- **Recover**: Recovery planning and improvements
-
-### 2. Technical Documentation
-- Network architecture analysis
-- Attack vector assessment
-- Security control implementation
-- Recovery procedures
-
-## 🚀 Getting Started
-
-### Prerequisites
-```plaintext
-- Understanding of network security concepts
-- Familiarity with NIST CSF
-- Knowledge of incident response procedures
-```
-
-### Installation
-
-1. Clone the repository
-```bash
-git clone https://github.com/yourusername/NIST-CSF-Incident-Report.git
-cd NIST-CSF-Incident-Report
-```
-
-2. Review documentation
-```bash
-cd docs/incident-report
-```
-
-## 📖 Usage Guide
-
-### Security Analysts
-```markdown
-1. Review incident analysis
-   - Technical details
-   - Attack patterns
-   - Response strategies
-
-2. Use templates
-   - Incident response
-   - Documentation
-   - Analysis frameworks
-```
-
-### System Administrators
-```markdown
-1. Implement controls
-   - Follow configuration guides
-   - Set up monitoring
-   - Configure alerts
-
-2. Use checklists
-   - Security controls
-   - System hardening
-   - Recovery procedures
-```
-
-## 🔑 Key Findings
-
-### Critical Insights
-1. Firewall Configuration
-   - Proper setup requirements
-   - Regular audit needs
-   - Configuration management
-
-2. Detection Systems
-   - Real-time monitoring
-   - Alert configuration
-   - Response optimization
-
-3. Response Protocol
-   - Team coordination
-   - Communication flows
-   - Resource allocation
-
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
-2. Create feature branch
-```bash
-git checkout -b feature/YourFeature
-```
-3. Commit changes
-```bash
-git commit -m 'Add YourFeature'
-```
-4. Push to branch
-```bash
-git push origin feature/YourFeature
-```
-5. Create Pull Request
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📬 Contact
+## Contact
 
-- **Project Link:** [https://github.com/yourusername/NIST-CSF-Incident-Report](https://github.com/yourusername/NIST-CSF-Incident-Report)
-- **Portfolio:** [Your Portfolio URL]
-- **LinkedIn:** [Your LinkedIn Profile]
-
-## 🙏 Acknowledgments
-
-- NIST Cybersecurity Framework
-- Cybersecurity community
-- Open source security tools
+Your Name - [your.email@example.com]
+Project Link: [https://github.com/yourusername/NIST-CSF-DDoS-Analysis](https://github.com/yourusername/NIST-CSF-DDoS-Analysis)
 
 ---
-*This project is part of a cybersecurity portfolio demonstrating incident response and analysis capabilities.*
+*This project is part of a cybersecurity portfolio demonstrating incident response and analysis capabilities using the NIST Cybersecurity Framework.*
